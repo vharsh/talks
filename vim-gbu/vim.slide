@@ -11,11 +11,30 @@ https://vharsh.github.io
 @thevharsh
 
 
+* Lessons on general productivity
+
+- Coding posture & comfort is super important
+- 💻 Re-organize/Clean your hacker den/desk
+- Eyes on the code, let your fingers command the machine
+- Touch type! Eyes on the screen, let fingers(🖐)rule the keyboard(⌨)
+- Take continous breaks, periodically get-up from your hack-space, 🚴 🤸
+- Define the EDITOR environment variable in your $SHELL and be less surprised each time
+- If you decide to use a modern editor, store your configs publicly(sharing is caring)
+
+
+* Things beyond your control
+- Most *nix systems come with a clone of vi, thanks to POSIX standards
+- Most popular linux distros ship vim out of the box
+- For the DevOps folks, most containers are going to have nano/vim
+- Learning the basics of vi is helpful as in *nix most things are configured via plain text files
+
+
 * Personal Opinions on good posture
 - Good posture & comfort, choose both
 .image images/head-posture.png
 .link https://www.spine-health.com/conditions/neck-pain/how-poor-posture-causes-neck-pain
-- ^ verify all of it from experts
+- ^ verify all of it from experts, I'm not a doctor
+
 
 * Basic machine/desk ergonomics
 - Blog from Zapier:
@@ -75,7 +94,7 @@ Vim isn't the superior or the inferior text-editor, it's just that there was no 
 * Moving fast in vim
 - Moving one screen, half a screen
 - Moving your cursor to the edges of the screens
-- Moving with 
+- Moving with
 
 * What do you need to do in Vim
 - Update text(Join, Append, Insert at end, Insert at beginning, insert, replace, Substitute)
