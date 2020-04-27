@@ -1,0 +1,105 @@
+An opinionated take at vi/Vim Great, Good, Unkind
+
+Vim-The Emergency Editor
+24 April 2020
+Tags: vi, vim, nix, ergonomics, being-lazy
+
+Harsh Vardhan
+Software Engineer, MayaData
+harsh.vardhan+talks@mayadata.io
+https://vharsh.github.io
+@thevharsh
+
+
+* Lessons on general productivity
+
+- Coding posture & comfort is super important
+- 💻 Re-organize/Clean your hacker den/desk
+- Eyes on the code, let your fingers command the machine
+- Touch type! Eyes on the screen, let fingers(🖐)rule the keyboard(⌨)
+- Take continous breaks, periodically get-up from your hack-space, 🚴 🤸
+- Define the EDITOR environment variable in your $SHELL and be less surprised each time
+- If you decide to use a modern editor, store your configs publicly(sharing is caring)
+
+
+* Things beyond your control
+- Most *nix systems come with a clone of vi, thanks to POSIX standards
+- Most popular linux distros ship vim out of the box
+- For the DevOps folks, most containers are going to have nano/vim
+- Learning the basics of vi is helpful as in *nix most things are configured via plain text files
+
+
+* Personal Opinions on good posture
+- Good posture & comfort, choose both
+.image images/head-posture.png
+.link https://www.spine-health.com/conditions/neck-pain/how-poor-posture-causes-neck-pain
+- ^ verify all of it from experts, I'm not a doctor
+
+
+* Basic machine/desk ergonomics
+- Blog from Zapier:
+.link https://zapier.com/blog/how-to-set-up-your-desk/
+- Blink your 👀!
+- My take: Raise your laptop high enough and use an external keyboard
+
+* Delegate less important things to your muscle memory
+- Try to touch-type as much as possible, mind the raised edges on [f] & [j] keys
+.image images/touch-type.gif _ 500
+- Keyboard & mouse, prefer the former
+- vim or emacs or vscode, choose the one which keeps you productive/happy
+- Put this in your ~/.${SHELL}rc , EDITOR=$(which <your-fav-choice>)
+
+
+* Why NOT choose a bare-bones editor like vi
+- prefer to use [Shift] + <Click> to select text and feel it's more productive
+- you know your favourite IDE's key bindings well enough and find 🖱 convenient
+- For writing K8s YAMLs I use VS-Code(hands down)
+.link https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools
+
+
+* Why choose vi/vim/nvim/emacs over fancy GUIs
+- _This presentation has been written using nvim_
+- using Jetbrains IDEs/vscode will be hard if your files are in a different machine
+- vi is everywhere
+- You can check-in your editorconfig to GitHub
+.link http://dotfiles.github.io/
+
+
+* We got some moves
+- Ditch the menus, cryptic key commands which aren't on the home row
+- Move around with hjkl, left, up, down, right
+- Move around with steroids
+- Editing texts with steroids
+- You can always get the best of the both worlds in your IDEs till you haven't mastered vim keybindings
+
+* Vi, We Eye
+Real programmers use Vi/Vim/Emacs/VsCode/Jetbrains-xyz/nano/etc
+Vim isn't the superior or the inferior text-editor, it's just that there was no 🖱 or arrow keys back then
+
+
+* What Vi
+- Modal editing, `command`, `insert`, `visual` for executing commands, inserting text, selecting texts
+- !rich-text like OpenOffice
+- steep initial learning curve 🧗
+
+
+* Vim through(most popular vi clone)
+- frustrating editor (5-10 minutes)
+- emergency editor in the short run(1-2 weeks)
+- very rewarding in the long run(~10-15years)
+.image images/hottest_editors.png
+^ xkcd 1823
+
+
+* Moving fast in vim
+- Moving one screen, half a screen
+- Moving your cursor to the edges of the screens
+- Moving with
+
+* What do you need to do in Vim
+- Update text(Join, Append, Insert at end, Insert at beginning, insert, replace, Substitute)
+- Write new text(insert)
+- Delete text(delete, cut)
+- Undo(uU)/Redo(^R)
+- Opening a line
+- Got to change names' cases?
